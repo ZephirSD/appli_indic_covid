@@ -39,3 +39,8 @@ div.total-indic{
     text-align: right;
     padding-right: var(--padding-text-indic);
 }
+
+svg.icon-up{
+    transform: rotate(45deg);
+    margin-right: 5px;
+}
