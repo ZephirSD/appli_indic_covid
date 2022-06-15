@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+  --blue-background: #06090D;
+  --blue-case-indic1: #485B73;
+  --blue-case-indic2: #253140;
+  --white: white;
+  --montserrat: 'Montserrat', sans-serif;  
+  --full-width: 100%;
+  --full-height: 100vh;
+  --height-header: 15vh; 
+  --width-case-indic: 20%;
+  --font-size-indic: 1.5em;
+  --font-size-indic-total: 1.8em;
+  --font-weight-indic: 600;
+  --padding-text-indic: 10px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--blue-background);
+    width: var(--full-width);
+    height: var(--full-height);
+}
+
+@import url(Header.css);
