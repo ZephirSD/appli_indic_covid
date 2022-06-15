@@ -14,14 +14,17 @@
   --font-size-indic-total: 1.8em;
   --font-weight-indic: 600;
   --padding-text-indic: 10px;
+  --margin-case-info-carte: 3%;
 }
 
 body{
-    padding: 0;
-    margin: 0;
-    background-color: var(--blue-background);
-    width: var(--full-width);
-    height: var(--full-height);
+  padding: 0;
+  margin: 0;
+  background-color: var(--blue-background);
+  width: calc(var(--full-width) - var(--margin-case-info-carte) * 2);
+  height: var(--full-height);
+  margin-left: var(--margin-case-info-carte);
+  margin-right: var(--margin-case-info-carte);
 }
 
 @import url(Header.css);
