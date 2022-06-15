@@ -1,0 +1,7 @@
+div.div-carte{
+    width: 100%;
+    height: 65vh;
+    background-color: var(--blue-case-indic1);
+    border-radius: 25px;
+    overflow: hidden;
+}
