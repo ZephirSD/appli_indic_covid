@@ -1,0 +1,6 @@
+div.grid-case-info-carte{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    column-gap: 5%;
+    margin-top: 10vh;
+}
