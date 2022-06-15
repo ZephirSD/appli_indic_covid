@@ -1,10 +1,14 @@
 import Header from './component/Header';
+import CaseCarteInfo from './component/CaseCarteInfo';
 import './style/style.scss';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
 
 function App() {
   return (
     <>
-    <Header/>
+      <Header/>
+      <CaseCarteInfo/>
     </>
   );
 }
