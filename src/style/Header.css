@@ -2,7 +2,7 @@ div.header{
     width: var(--full-width);
     height: var(--height-header);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 div.case-indic{
