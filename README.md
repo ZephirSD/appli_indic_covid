@@ -3,7 +3,7 @@
 ## Version Ordinateur
 
 <div>
-    <img src="public/image/apercu_appli" alt="visuel"/>
+    <img src="public/image/apercu_appli.png" alt="visuel"/>
     <div align="center">
         <h4 topmargin="0" bottommargin="0">Aperçu du site</h4>
     </div>
