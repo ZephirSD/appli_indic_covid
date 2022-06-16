@@ -19,6 +19,7 @@ function Actualite() {
         const lien = e.currentTarget.getAttribute("data-url");
         setLienSrc(lien);
         setRedirecondi(current => !current);
+        console.clear();
     }
   return (
       useEffect(() =>{
