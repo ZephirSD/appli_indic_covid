@@ -8,6 +8,7 @@ div.case-actu{
 
 div.block-title-actu{
     width: 100%;
+    position: relative;
 }
 
 h1.title-sante{
@@ -15,11 +16,12 @@ h1.title-sante{
     color: var(--white);
     font-family: var(--montserrat);
     font-weight: 500;
+    margin: 15px 0;
 }
 
 div.scroll-case-actu{
     width: 100%;
-    height: calc(65vh - 81px);
+    height: calc(65vh - (15px * 2 + 39px));
     overflow-y: auto;
     display: grid;
     grid-auto-rows: 65px;
@@ -28,7 +30,7 @@ div.scroll-case-actu{
 }
 
 div.scroll-case-actu::-webkit-scrollbar{
-    width: 10px;
+    width: 7px;
 }
 
 div.scroll-case-actu::-webkit-scrollbar-track{
@@ -89,4 +91,29 @@ div.redirection a{
 svg.icon-redirect{
     color: var(--white);
     height: 31px;
+}
+
+iframe.iframe-display{
+    width: 100%;
+    height: calc(65vh - (15px * 2 + 39px));
+    overflow: hidden;
+}
+
+button.button-redirect{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button.button-retour-info{
+    position: absolute;
+    left: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+svg.retour-info{
+    height: 30px;
+    color: var(--white);
 }
