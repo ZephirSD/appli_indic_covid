@@ -4,6 +4,9 @@
   --blue-background: #06090D;
   --blue-case-indic1: #485B73;
   --blue-case-indic2: #253140;
+  --blue-info: #364659;
+  --color-source: #A4A4A4;
+  --color-thumb-hover: #7e7e7e;
   --white: white;
   --montserrat: 'Montserrat', sans-serif;  
   --full-width: 100%;
@@ -30,3 +33,4 @@ body{
 @import url(Header.css);
 @import url(CaseCarteInfo.css);
 @import url(Carte.css);
+@import url(Actualite.css);
