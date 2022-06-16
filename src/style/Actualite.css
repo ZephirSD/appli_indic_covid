@@ -3,30 +3,44 @@ div.case-actu{
     height: 65vh;
     background-color: var(--blue-case-indic1);
     border-radius: 25px;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: overlay;
+    overflow: hidden;
+}
+
+div.block-title-actu{
+    width: 100%;
+}
+
+h1.title-sante{
+    text-align: center;
+    color: var(--white);
+    font-family: var(--montserrat);
+    font-weight: 500;
+}
+
+div.scroll-case-actu{
+    width: 100%;
+    height: calc(65vh - 81px);
+    overflow-y: auto;
     display: grid;
     grid-auto-rows: 65px;
     row-gap: 10px;
+    position: static;
 }
 
-
-div.case-actu::-webkit-scrollbar{
+div.scroll-case-actu::-webkit-scrollbar{
     width: 10px;
 }
 
-div.case-actu::-webkit-scrollbar-track{
-    overflow: hidden;
+div.scroll-case-actu::-webkit-scrollbar-track{
     background-color: transparent;
 }
 
-div.case-actu::-webkit-scrollbar-thumb{
+div.scroll-case-actu::-webkit-scrollbar-thumb{
     background-color: var(--color-source);
     border-radius: 15px;
 }
 
-div.case-actu::-webkit-scrollbar-thumb:hover{
+div.scroll-case-actu::-webkit-scrollbar-thumb:hover{
     background-color: var(--color-thumb-hover);
 }
 
@@ -66,6 +80,10 @@ div.redirection{
     align-items: center;
     justify-items: right;
     cursor: pointer;
+}
+
+div.redirection a{
+    text-decoration: none;
 }
 
 svg.icon-redirect{

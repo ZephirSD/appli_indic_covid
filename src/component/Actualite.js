@@ -18,17 +18,24 @@ function Actualite() {
         },[]),
         <>    
         <div className='case-actu'>
-            {
-                data2.map((valueNews,index)=>(
-                    <div className="select-info" key={index}>
-                        <div className="title-actu">{valueNews.title.length > 30 ? `${valueNews.title.substring(0, 30)}...` : valueNews.title}{}</div>
-                        <div className="source-actu">{valueNews.source.name}</div>
-                        <div className='redirection'>
-                            <FontAwesomeIcon icon={faAngleRight} className="icon-redirect"/>
+            <div className='block-title-actu'>
+                <h1 className='title-sante'>Info Santé</h1>
+            </div>
+            <div className='scroll-case-actu'>
+                {
+                    data2.map((valueNews,index)=>(
+                        <div className="select-info" key={index}>
+                            <div className="title-actu">{valueNews.title.length > 30 ? `${valueNews.title.substring(0, 30)}...` : valueNews.title}{}</div>
+                            <div className="source-actu">{valueNews.source.name}</div>
+                            <div className='redirection'>
+                                {/* <a href={valueNews.url} target="BLANK_"> */}
+                                    <FontAwesomeIcon icon={faAngleRight} className="icon-redirect"/>
+                                {/* </a> */}
+                            </div>
                         </div>
-                    </div>
-                ))
-            }
+                    ))
+                }
+            </div>
         </div>
     </>
   )
