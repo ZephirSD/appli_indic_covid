@@ -1,7 +1,7 @@
 div.grid-case-info-carte{
     display: grid;
     grid-template-columns: repeat(2,auto);
-    column-gap: 5%;
+    column-gap: 5vw;
     width: var(--full-width);
     margin-top: 10vh;
 }
