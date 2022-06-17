@@ -17,4 +17,5 @@ div.circle-cluster{
     align-items: center;
     color: var(--white);
     font-family: var(--montserrat);
+    font-weight: var(--font-weight-indic);
 }
