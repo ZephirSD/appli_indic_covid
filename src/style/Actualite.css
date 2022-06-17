@@ -7,7 +7,7 @@ div.case-actu{
 }
 
 div.block-title-actu{
-    width: 100%;
+    width: var(--full-width);
     position: relative;
 }
 
@@ -20,7 +20,7 @@ h1.title-sante{
 }
 
 div.scroll-case-actu{
-    width: 100%;
+    width: var(--full-width);
     height: calc(65vh - (15px * 2 + 39px));
     overflow-y: auto;
     display: grid;
@@ -94,9 +94,10 @@ svg.icon-redirect{
 }
 
 iframe.iframe-display{
-    width: 100%;
+    width: var(--full-width);
     height: calc(65vh - (15px * 2 + 39px));
     overflow: hidden;
+    border: none;
 }
 
 button.button-redirect{
