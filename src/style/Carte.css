@@ -5,3 +5,16 @@ div.div-carte{
     border-radius: 25px;
     overflow: hidden;
 }
+
+div.circle-cluster{
+    /* width: 25px;
+    height: 25px; */
+    border-radius: 50%;
+    border: 2px solid var(--color-border-cluster);
+    background-color: var(--color-cluster);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--montserrat);
+}
