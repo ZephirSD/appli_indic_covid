@@ -17,7 +17,7 @@ function Header() {
         <>
             <div className='header'>
                 <Indicateur title={'Cas'} num_base={data.todayCases} total={data.cases} colorIndic={'#D97777'}/>
-                <Indicateur title={'Guerisons'} num_base={data.todayRecovered} total={data.recovered} colorIndic={'#9ED599'}/>
+                <Indicateur title={'Guérisons'} num_base={data.todayRecovered} total={data.recovered} colorIndic={'#9ED599'}/>
                 <Indicateur title={'Décès'} num_base={data.todayDeaths} total={data.deaths} colorIndic={'#D97777'}/>
                 <Indicateur title={'Tests effectués'} total={data.tests}/>
             </div>
