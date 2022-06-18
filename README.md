@@ -27,4 +27,4 @@ Dès que cela est installé avec votre terminal de commande vous pouvez démarre
     npm start
 ```
 
-Et vous pouvez ouvrir votre projet avec <a href="http://localhost:3000" target="BLANK_">http://localhost:3000</a>
+Et vous pouvez ouvrir votre projet avec <a href="http://localhost:3000" target="BLANK">http://localhost:3000</a>
