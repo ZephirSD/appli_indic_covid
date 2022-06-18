@@ -7,6 +7,7 @@ import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 function Actualite() {
     const [data2, setData2] = useState([]);
     const [lienSrc, setLienSrc] = useState('');
+    const [titleSrc, setTitleSrc] = useState('');
     const [redirCondi, setRedirecondi] = useState(false);
     const newsAPI = () => {
         fetch('https://newsapi.org/v2/top-headlines?country=fr&category=health&apiKey=a43dfafcaef84acc93b45356859404a0')
@@ -17,7 +18,9 @@ function Actualite() {
     }
     const boolRedirc = (e) => {
         const lien = e.currentTarget.getAttribute("data-url");
+        const title = e.currentTarget.getAttribute("data-title");
         setLienSrc(lien);
+        setTitleSrc(title)
         setRedirecondi(current => !current);
         console.clear();
     }
@@ -41,13 +44,13 @@ function Actualite() {
                             <div className="title-actu">{valueNews.title.length > 30 ? `${valueNews.title.substring(0, 30)}...` : valueNews.title}{}</div>
                             <div className="source-actu">{valueNews.source.name}</div>
                             <div className='redirection'>
-                                <button onClick={boolRedirc} type={'button'} data-url={valueNews.url} className="button-redirect">
+                                <button onClick={boolRedirc} type={'button'} data-url={valueNews.url} data-title={valueNews.title} className="button-redirect">
                                     <FontAwesomeIcon icon={faAngleRight} className="icon-redirect"/>
                                 </button>
                             </div>
                         </div>
                     ))
-                    : <iframe title='test' src={lienSrc} className='iframe-display'></iframe>
+                    : <iframe title={titleSrc} src={lienSrc} className='iframe-display'></iframe>
                 }   
             </div>
         </div>
