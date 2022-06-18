@@ -9,7 +9,7 @@ function Actualite() {
     const [lienSrc, setLienSrc] = useState('');
     const [redirCondi, setRedirecondi] = useState(false);
     const newsAPI = () => {
-        fetch('https://saurav.tech/NewsAPI/top-headlines/category/health/fr.json')
+        fetch('https://newsapi.org/v2/top-headlines?country=fr&category=health&apiKey=a43dfafcaef84acc93b45356859404a0')
         .then((response) => response.json())
         .then((valueData) => {
             setData2(valueData.articles);
