@@ -1,5 +1,5 @@
-# Application COVID-19 | Réunion (Personal Project)
-## with React JS 
+# Application COVID-19 | Réunion (Projet Personnel)
+## avec React JS en Localhost
 ## Version Ordinateur
 
 <div>
@@ -20,7 +20,8 @@ Veuillez installer
     npm install 
 ```
 
-directement dans votre projet 
+directement dans votre projet.
+<br> 
 Dès que cela est installé avec votre terminal de commande vous pouvez démarrer votre projet avec
 ```sh
     npm start
