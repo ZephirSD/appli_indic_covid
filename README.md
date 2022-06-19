@@ -9,7 +9,9 @@
     </div>
 </div>
 <div>
-    <img src="public/Image/apercu_appli_mobile.png" alt="visuel"/>
+    <div align="center">
+        <img src="public/Image/apercu_appli_mobile.png" alt="visuel" width="200"/>
+    </div>
     <div align="center">
         <h4 topmargin="0" bottommargin="0">Aperçu du site Mobile</h4>
     </div>
