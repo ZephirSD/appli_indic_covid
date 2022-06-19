@@ -5,3 +5,12 @@ div.grid-case-info-carte{
     width: var(--full-width);
     margin-top: 10vh;
 }
+
+@media screen and (max-width: 720px)
+{
+    div.grid-case-info-carte{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2, auto);
+        row-gap: 40px;
+    }
+}

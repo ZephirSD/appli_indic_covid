@@ -122,3 +122,27 @@ svg.retour-info{
     height: 30px;
     color: var(--white);
 }
+
+@media screen and (max-width: 720px)
+{
+    div.case-actu{
+        width: var(--full-width);
+    }
+    div.title-actu{
+        font-size: 1.05em;
+    }
+    div.source-actu{
+        font-size: 0.75em;
+    }
+    div.title-actu,
+    div.source-actu{
+        width: 100%;
+        padding-left: 15px;
+    }
+    div.redirection{
+        width: var(--full-width);
+        justify-content: center;
+        justify-items: unset;
+    }
+
+}

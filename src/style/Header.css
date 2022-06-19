@@ -44,3 +44,27 @@ svg.icon-up{
     transform: rotate(45deg);
     margin-right: 5px;
 }
+
+@media screen and (max-width: 720px)
+{
+    .swiper{
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide{
+        position: relative;
+    }  
+    .swiper-pagination{
+        transform: translate(0px, 15px);
+        position: relative;
+    }
+    .swiper-pagination-bullet{
+        background-color: var(--white);
+    }
+    div.header{
+        display: block;
+    }
+    div.case-indic{
+        width: var(--full-width);
+    }
+}

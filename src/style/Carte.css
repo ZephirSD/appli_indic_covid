@@ -19,3 +19,10 @@ div.circle-cluster{
     font-family: var(--montserrat);
     font-weight: var(--font-weight-indic);
 }
+
+@media screen and (max-width: 720px)
+{
+    div.div-carte{
+        width: var(--full-width);
+    }
+}
