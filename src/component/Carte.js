@@ -6,7 +6,9 @@ function Carte() {
     latitude: -21.131,
     longitude: 55.5669,
     zoom: 8.95,
-});
+    width: "100%",
+    height: "100%",
+  });
   return (
     <>
       <Map
