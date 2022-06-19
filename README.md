@@ -1,11 +1,17 @@
 # Application COVID-19 | Réunion (Projet Personnel)
 ## avec React JS en Localhost
-## Version Ordinateur
+## Version Ordinateur et Mobile
 
 <div>
     <img src="public/Image/apercu_appli.png" alt="visuel"/>
     <div align="center">
-        <h4 topmargin="0" bottommargin="0">Aperçu du site</h4>
+        <h4 topmargin="0" bottommargin="0">Aperçu du site Ordinateur</h4>
+    </div>
+</div>
+<div>
+    <img src="public/Image/apercu_appli_mobile.png" alt="visuel"/>
+    <div align="center">
+        <h4 topmargin="0" bottommargin="0">Aperçu du site Mobile</h4>
     </div>
 </div>
 
