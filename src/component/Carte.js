@@ -19,9 +19,12 @@ function Carte() {
       >
         <NavigationControl style={{marginRight: '15px', marginTop: '15px'}}/>
         {clusters.map((cluster) => (
-          <Marker longitude={cluster.longitude} latitude={cluster.latitude} key={cluster.id}>
+          cluster.nombre > 0 ? 
+          (<Marker longitude={cluster.longitude} latitude={cluster.latitude} key={cluster.id}>
               <div className='circle-cluster' style={{width: 'calc(25px*' + cluster.nombre * 0.7 + ')', height: 'calc(25px*' + cluster.nombre * 0.7 + ')'}}>{cluster.nombre}</div>
-          </Marker>
+          </Marker>) : 
+          (<>
+          </>)
         ))}
       </Map>
     </>
