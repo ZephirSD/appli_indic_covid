@@ -11,12 +11,10 @@ function Header() {
     const [queryMobile, setQueryMobile] = useState({
         matches: window.innerWidth < 720 ? true : false,
     })
-    const diseaseAPI = () => {
-        fetch('https://disease.sh/v3/covid-19/countries/R%C3%A9union?yesterday=true&twoDaysAgo=true&strict=true&allowNull=0')
-        .then((response) => response.json())
-        .then((valueData) => {
-            setData(valueData);
-        })
+    const diseaseAPI = async () => {
+        const api =  await fetch('https://disease.sh/v3/covid-19/countries/R%C3%A9union?yesterday=true&twoDaysAgo=true&strict=true&allowNull=0');
+        const response = await api.json();
+        setData(response);
     }
     return (
         useEffect(()=>{

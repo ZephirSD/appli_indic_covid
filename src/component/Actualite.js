@@ -9,12 +9,10 @@ function Actualite() {
     const [lienSrc, setLienSrc] = useState('');
     const [titleSrc, setTitleSrc] = useState('');
     const [redirCondi, setRedirecondi] = useState(false);
-    const newsAPI = () => {
-        fetch('https://newsapi.org/v2/top-headlines?country=fr&category=health&apiKey=a43dfafcaef84acc93b45356859404a0')
-        .then((response) => response.json())
-        .then((valueData) => {
-            setData2(valueData.articles);
-        })
+    const newsAPI = async () => {
+        const api = await fetch('https://newsapi.org/v2/top-headlines?country=fr&category=health&apiKey=a43dfafcaef84acc93b45356859404a0')
+        const reponse = await api.json();
+        setData2(reponse.articles);
     }
     const boolRedirc = (e) => {
         const lien = e.currentTarget.getAttribute("data-url");
